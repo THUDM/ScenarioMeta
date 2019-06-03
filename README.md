@@ -7,7 +7,7 @@ Zhengxiao Du, Xiaowei Wang, [Hongxia Yang](https://sites.google.com/site/hystati
 
 Accepted to KDD 2019 Applied Data Science Track!
 
-Under construction. Expect an official release of the dataset and cleaner code in June
+Under construction. Expect a stable release of cleaner code in June
 
 ## Prerequisites
 
@@ -40,11 +40,16 @@ Three public datasets are used for experiments. The Taobao Cloud Theme Click Dat
 - Movielens-20M [Source](https://grouplens.org/datasets/movielens/20m/)
 - Taobao Cloud Theme Click Dataset [Source](https://tianchi.aliyun.com/dataset/dataDetail?dataId=9716)
 
-You can download the preprocessed datasets from OneDrive by running `python scripts/download_preprocessed_data.py`.
-If you're in regions where OneDrive is not available (e.g. Mainland China), try to use Tsinghua Cloud by running `python scripts/download_preprocessed_data.py --tsinghua`.
+You can download the preprocessed datasets from OneDrive by running `python scripts/download_preprocessed_data.py`.  
+If you're in regions where OneDrive is not available (e.g. Mainland China), try to download from Tsinghua Cloud by running `python scripts/download_preprocessed_data.py --tsinghua`.
 
 ### Training
 
-Different configurations for datasets in the paper are stored under the `configs/` directory. Launch a experiment with `--config` to specify the configuration file, `--root_directory` to specify the path to the downloaded data, `--comment` to specify the experiment name which will be used in logging and `--gpu` to speficy the gpu id to use. 
+For training, simply run `python src/main.py` with necessary parameters.  
+
+Different configurations for datasets in the paper are stored under the `configs/` directory. Launch a experiment with `--config` to specify the configuration file, `--root_directory` to specify the path to the preprocessed data, `--comment` to specify the experiment name which will be used in logging and `--gpu` to speficy the gpu id to use. 
 
 ## Cite
+
+Please cite our paper if you use the code or datasets in your own work.
+
