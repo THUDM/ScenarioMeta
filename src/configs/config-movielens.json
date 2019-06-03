@@ -1,0 +1,61 @@
+{
+  "support": {
+    "step": 20,
+    "min_step": 4,
+    "batch_size": 128,
+    "input_gate": true,
+    "forget_gate": true,
+    "lstm_config": {
+      "layer_norm": true,
+      "hidden_size": 16
+    },
+    "user_graph": false,
+    "item_graph": false,
+    "learn_bias": true,
+    "flexible_step": true,
+    "hidden_input": false
+  },
+  "recommender": {
+    "model_type": "interaction",
+    "input_size": 128,
+    "hidden_layers": [
+      [
+        64,
+        false,
+        0.0
+      ],
+      [
+        32,
+        false,
+        0.0
+      ],
+      [
+        16,
+        false,
+        0.0
+      ]
+    ],
+    "final_size": 1
+  },
+  "optim": {
+    "lr": 0.0001,
+    "weight_decay": 1e-05
+  },
+  "lr": {
+    "stop_lr": 5e-05,
+    "init_lr": 0.0001,
+    "update_lr": 0.0001
+  },
+  "training": {
+    "batch_size": 128,
+    "negative_ratio": 1,
+    "loss": "MyHingeLoss",
+    "loss_config": {
+      "margin": 1
+    },
+    "step_penalty": 0.0,
+    "max_steps": 100000
+  },
+  "save": true,
+  "few_num": 64
+}
