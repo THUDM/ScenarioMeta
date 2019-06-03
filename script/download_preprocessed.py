@@ -112,7 +112,7 @@ if __name__ == '__main__':
     if args.tsinghua:
         url = 'https://cloud.tsinghua.edu.cn/f/f8de22284ac84628b0c1/?dl=1'
     else:
-        url = 'https://www.dropbox.com/s/43jggpnbvhdez2t/data.tar.gz?dl=1'
+        raise NotImplemented
     fname = 'scenario_data.tar.gz'
 
     download(url, '.', fname)
