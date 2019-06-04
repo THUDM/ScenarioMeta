@@ -50,8 +50,8 @@ For training, simply run `python src/main.py` with necessary parameters.
 Different configurations for datasets in the paper are stored under the `configs/` directory. Launch a experiment with `--config` to specify the configuration file, `--root_directory` to specify the path to the preprocessed data, `--comment` to specify the experiment name which will be used in logging and `--gpu` to speficy the gpu id to use. 
 
 ## Cite
+Please cite our paper if you use the code or datasets in your own work:
 ```
-Please cite our paper if you use the code or datasets in your own work
 @article{du2019scenariometa,
   title={Sequential Scenario-Specific Meta Learner for Online Recommendation},
   author={Du, Zhengxiao and Wang, Xiaowei and Yang, Hongxia and Zhou, Jingren and Tang, Jie},
