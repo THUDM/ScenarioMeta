@@ -104,7 +104,6 @@ def untar(path, fname, deleteTar=True):
         os.remove(fullpath)
 
 
-
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--tsinghua', action='store_true')
@@ -112,10 +111,8 @@ if __name__ == '__main__':
     if args.tsinghua:
         url = 'https://cloud.tsinghua.edu.cn/f/f8de22284ac84628b0c1/?dl=1'
     else:
-        raise NotImplemented
+        url = 'https://onedrive.gimhoy.com/sharepoint/aHR0cHM6Ly9tYWlsc3RzaW5naHVhZWR1Y24tbXkuc2hhcmVwb2ludC5jb20vOnU6L2cvcGVyc29uYWwvZHV6eDE2X21haWxzX3RzaW5naHVhX2VkdV9jbi9FUy1nckRVOU9NbE9oNXA1N01TN0RBd0I5MkZYdVFSaE5RekZhWkhjYmxRNlFRP2U9ZnVEdDc0.tar.gz'
     fname = 'scenario_data.tar.gz'
 
     download(url, '.', fname)
     untar('.', fname)
-
-
